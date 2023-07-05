@@ -43,7 +43,7 @@ int main() {
 
 		}
 		else {
-			cout << "Error, incorrect choice, please try again";
+			cout << "Error, incorrect choice, please try again\n";
 
 		}
 		
