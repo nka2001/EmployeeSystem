@@ -1,5 +1,7 @@
 #include <iostream>
 
+#include "Employee.cpp"
+
 using namespace std;
 
 int main() {
@@ -23,12 +25,31 @@ int main() {
 		}
 		else if (choice.compare("E") == 0) {
 
-			cout << "Enter a new employees information: ";
+			cout << "Enter a new employees information: \n";
+			cout << "Name: ";
+			
+			string name = "";
+
+			cin >> name;
+
+			cout << "\n ID: ";
+
+			int id = 0;
+
+			cin >> id;
+
+			Employee newEmp(name, id);
+			
+
+
+
 			//gather and pass input to setters
 		} 
 		else if (choice.compare("F") == 0) {
 			
 			cout << "Enter the ID of the employee you'd like to find information on: ";
+
+
 
 		}
 		else if (choice.compare("C") == 0) {
@@ -50,6 +71,8 @@ int main() {
 	
 	
 	}
+
+
 
 
 

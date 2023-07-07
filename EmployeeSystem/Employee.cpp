@@ -23,7 +23,7 @@ public:
 	/*
 	* overloaded constructor, takes name and id as parameters
 	*/
-	Employee(char* n, int i) {
+	Employee(string n, int i) {
 		name = n;
 		id = i;
 	}
@@ -31,9 +31,10 @@ public:
 	/*
 	* print function, will return the name and ID of the employee
 	*/
-	char* print()
+	string print()
 	{
-		return nullptr;
+		string var = "Name: " + name + " ID: " + to_string(id) + "\n";
+		return var;
 	}
 
 	/*
@@ -41,15 +42,15 @@ public:
 	*/
 	int getID()
 	{
-		return 0;
+		return id;
 	}
 
 	/*
 	* getName will return the name of the employee
 	*/
-	char* getName()
+	string getName()
 	{
-		return nullptr;
+		return name ;
 	}
 
 	/*
@@ -57,6 +58,8 @@ public:
 	*/
 	void setID(int i)
 	{
+		id = i;
+
 	}
 
 	/*
@@ -64,6 +67,7 @@ public:
 	*/
 	void setName(char* n)
 	{
+		name = n;
 	}
 
 };
